@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{32511353-3773-4251-9EAA-08D58103EB37}</ProjectGuid>
+    <RootNamespace>Server</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)Build\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Temporary\</IntDir>
+    <TargetName>Server</TargetName>
+    <IncludePath>$(SolutionDir)\Include\AccountManagement;$(SolutionDir)\Include\CollisionsSystem;$(SolutionDir)\Include\SharedNetworking;$(SolutionDir)\Include\Server;$(SolutionDir)\Include\ServerDatabase;$(SolutionDir)\Include\ServerNetworking;$(SolutionDir)\Include\Utilities;$(SolutionDir)\Include\Timing;$(IncludePath)</IncludePath>
+    <SourcePath>$(SolutionDir)\Source\AccountManagement;$(SolutionDir)\Source\CollisionsSystem;$(SolutionDir)\Source\SharedNetworking;$(SolutionDir)\Source\Server;$(SolutionDir)\Source\ServerNetworking;$(SolutionDir)\Source\ServerDatabase;$(SolutionDir)\Source\Utilities;$(SolutionDir)\Source\Timing;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)Build\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Temporary\</IntDir>
+    <TargetName>Server</TargetName>
+    <IncludePath>$(SolutionDir)\Include\AccountManagement;$(SolutionDir)\Include\CollisionsSystem;$(SolutionDir)\Include\SharedNetworking;$(SolutionDir)\Include\Server;$(SolutionDir)\Include\ServerDatabase;$(SolutionDir)\Include\ServerNetworking;$(SolutionDir)\Include\Utilities;$(SolutionDir)\Include\Timing;$(IncludePath)</IncludePath>
+    <SourcePath>$(SolutionDir)\Source\AccountManagement;$(SolutionDir)\Source\CollisionsSystem;$(SolutionDir)\Source\SharedNetworking;$(SolutionDir)\Source\Server;$(SolutionDir)\Source\ServerNetworking;$(SolutionDir)\Source\ServerDatabase;$(SolutionDir)\Source\Utilities;$(SolutionDir)\Source\Timing;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)Libraries\SFML-2.1\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)\Libraries\SFML-2.1\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-system-d.lib;sfml-main-d.lib;sfml-window-d.lib;sfml-audio-d.lib;sfml-graphics-d.lib;sfml-network-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)Libraries\SFML-2.1\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)\Libraries\SFML-2.1\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-system.lib;sfml-main.lib;sfml-window.lib;sfml-audio.lib;sfml-graphics.lib;sfml-network.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Include\AccountManagement\AccountManager.h" />
+    <ClInclude Include="..\Include\AccountManagement\AccountProperties.h" />
+    <ClInclude Include="..\Include\AccountManagement\AccountInfo.h" />
+    <ClInclude Include="..\Include\ServerDatabase\DBList.h" />
+    <ClInclude Include="..\Include\ServerDatabase\DBListAccessor.h" />
+    <ClInclude Include="..\Include\ServerDatabase\DBMap.h" />
+    <ClInclude Include="..\Include\ServerDatabase\DBMapAccessor.h" />
+    <ClInclude Include="..\Include\ServerDatabase\DBSupportedTypes.h" />
+    <ClInclude Include="..\Include\ServerDatabase\DBTable.h" />
+    <ClInclude Include="..\Include\ServerDatabase\DBTableAccessor.h" />
+    <ClInclude Include="..\Include\ServerDatabase\FieldDef.h" />
+    <ClInclude Include="..\Include\ServerDatabase\Row.h" />
+    <ClInclude Include="..\Include\ServerDatabase\Database.h" />
+    <ClInclude Include="..\Include\ServerDatabase\RowAccessor.h" />
+    <ClInclude Include="..\Include\ServerDatabase\Store.h" />
+    <ClInclude Include="..\Include\ServerDatabase\StoreAccessor.h" />
+    <ClInclude Include="..\Include\ServerDatabase\StoreLoader.h" />
+    <ClInclude Include="..\Include\ServerNetworking\ConnectionInfo.h" />
+    <ClInclude Include="..\Include\ServerNetworking\ManagedNetworkHandler.h" />
+    <ClInclude Include="..\Include\ServerNetworking\NetworkHandler.h" />
+    <ClInclude Include="..\Include\ServerNetworking\NetworkHandlerRegister.h" />
+    <ClInclude Include="..\Include\ServerNetworking\NetworkManager.h" />
+    <ClInclude Include="..\Include\ServerNetworking\NetworkManagerListener.h" />
+    <ClInclude Include="..\Include\Server\Ability.h" />
+    <ClInclude Include="..\Include\Server\AbilityBuilder.h" />
+    <ClInclude Include="..\Include\Server\AbilityEffect.h" />
+    <ClInclude Include="..\Include\Server\AbilityInstance.h" />
+    <ClInclude Include="..\Include\Server\AbilityListing.h" />
+    <ClInclude Include="..\Include\Server\AbilityManager.h" />
+    <ClInclude Include="..\Include\Server\AOI.h" />
+    <ClInclude Include="..\Include\Server\AOIManager.h" />
+    <ClInclude Include="..\Include\Server\CharacterMailData.h" />
+    <ClInclude Include="..\Include\Server\CharacterSelectionListener.h" />
+    <ClInclude Include="..\Include\Server\CharacterSelectionManager.h" />
+    <ClInclude Include="..\Include\Server\CharacterSocialData.h" />
+    <ClInclude Include="..\Include\Server\CharacterStoreDefs.h" />
+    <ClInclude Include="..\Include\Server\ChatChannel.h" />
+    <ClInclude Include="..\Include\Server\ChatMessageValidator.h" />
+    <ClInclude Include="..\Include\Server\ChatService.h" />
+    <ClInclude Include="..\Include\Server\ChatUserInfo.h" />
+    <ClInclude Include="..\Include\Server\CommandStreamWatcher.h" />
+    <ClInclude Include="..\Include\Server\Entity.h" />
+    <ClInclude Include="..\Include\Server\EntityBuilder.h" />
+    <ClInclude Include="..\Include\Server\EntityManager.h" />
+    <ClInclude Include="..\Include\Server\Group.h" />
+    <ClInclude Include="..\Include\Server\GroupManagerListener.h" />
+    <ClInclude Include="..\Include\Server\GroupManager.h" />
+    <ClInclude Include="..\Include\Server\GroupMember.h" />
+    <ClInclude Include="..\Include\Server\MailService.h" />
+    <ClInclude Include="..\Include\Server\NameVerifier.h" />
+    <ClInclude Include="..\Include\Server\Player.h" />
+    <ClInclude Include="..\Include\Server\PlayerInfo.h" />
+    <ClInclude Include="..\Include\Server\Realm.h" />
+    <ClInclude Include="..\Include\Server\RealmListener.h" />
+    <ClInclude Include="..\Include\Server\RealmManager.h" />
+    <ClInclude Include="..\Include\Server\RealmProperties.h" />
+    <ClInclude Include="..\Include\Server\RealmInfo.h" />
+    <ClInclude Include="..\Include\Server\Server.h" />
+    <ClInclude Include="..\Include\Server\SessionManager.h" />
+    <ClInclude Include="..\Include\Server\Session.h" />
+    <ClInclude Include="..\Include\Server\SessionManagerListener.h" />
+    <ClInclude Include="..\Include\Server\SessionStates.h" />
+    <ClInclude Include="..\Include\Server\StatSheet.h" />
+    <ClInclude Include="..\Include\Server\StatSheetKeys.h" />
+    <ClInclude Include="..\Include\Server\Zone.h" />
+    <ClInclude Include="..\Include\Server\ZoneLocation.h" />
+    <ClInclude Include="..\Include\Server\ZoneManager.h" />
+    <ClInclude Include="..\Include\Server\ZoneTransferRequest.h" />
+    <ClInclude Include="..\Include\SharedNetworking\NetworkEnums.h" />
+    <ClInclude Include="..\Include\SharedNetworking\NetworkInstructionDefinitions.h" />
+    <ClInclude Include="..\Include\SharedNetworking\NetworkMessage.h" />
+    <ClInclude Include="..\Include\Timing\TimerListener.h" />
+    <ClInclude Include="..\Include\Timing\TimerManager.h" />
+    <ClInclude Include="..\Include\Utilities\ChatUserTypes.h" />
+    <ClInclude Include="..\Include\Utilities\FileListing.h" />
+    <ClInclude Include="..\Include\Utilities\FileUtils.h" />
+    <ClInclude Include="..\Include\Utilities\IndexedVector.h" />
+    <ClInclude Include="..\Include\Utilities\InfoStore.h" />
+    <ClInclude Include="..\Include\Utilities\Listenable.h" />
+    <ClInclude Include="..\Include\Utilities\MathConstants.h" />
+    <ClInclude Include="..\Include\Utilities\NCFFile.h" />
+    <ClInclude Include="..\Include\Utilities\SearchableVector.h" />
+    <ClInclude Include="..\Include\Utilities\Task.h" />
+    <ClInclude Include="..\Include\Utilities\TaskExecutor.h" />
+    <ClInclude Include="..\Include\Utilities\TaskListener.h" />
+    <ClInclude Include="..\Include\Utilities\TaskWait.h" />
+    <ClInclude Include="..\Include\Utilities\Utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Source\AccountManagement\AccountManager.cpp" />
+    <ClCompile Include="..\Source\ServerDatabase\Database.cpp" />
+    <ClCompile Include="..\Source\ServerDatabase\DBList.cpp" />
+    <ClCompile Include="..\Source\ServerDatabase\DBMap.cpp" />
+    <ClCompile Include="..\Source\ServerDatabase\DBTable.cpp" />
+    <ClCompile Include="..\Source\ServerDatabase\DBTableAccessor.cpp" />
+    <ClCompile Include="..\Source\ServerDatabase\Row.cpp" />
+    <ClCompile Include="..\Source\ServerDatabase\RowAccessor.cpp" />
+    <ClCompile Include="..\Source\ServerDatabase\Store.cpp" />
+    <ClCompile Include="..\Source\ServerDatabase\StoreAccessor.cpp" />
+    <ClCompile Include="..\Source\ServerDatabase\StoreLoader.cpp" />
+    <ClCompile Include="..\Source\ServerNetworking\ConnectionInfo.cpp" />
+    <ClCompile Include="..\Source\ServerNetworking\ManagedNetworkHandler.cpp" />
+    <ClCompile Include="..\Source\ServerNetworking\NetworkHandler.cpp" />
+    <ClCompile Include="..\Source\ServerNetworking\NetworkHandlerRegister.cpp" />
+    <ClCompile Include="..\Source\ServerNetworking\NetworkManager.cpp" />
+    <ClCompile Include="..\Source\Server\Ability.cpp" />
+    <ClCompile Include="..\Source\Server\AbilityBuilder.cpp" />
+    <ClCompile Include="..\Source\Server\AbilityEffect.cpp" />
+    <ClCompile Include="..\Source\Server\AbilityInstance.cpp" />
+    <ClCompile Include="..\Source\Server\AbilityListing.cpp" />
+    <ClCompile Include="..\Source\Server\AbilityManager.cpp" />
+    <ClCompile Include="..\Source\Server\AOI.cpp" />
+    <ClCompile Include="..\Source\Server\AOIManager.cpp" />
+    <ClCompile Include="..\Source\Server\CharacterSelection.cpp" />
+    <ClCompile Include="..\Source\Server\ChatChannel.cpp" />
+    <ClCompile Include="..\Source\Server\ChatMessageValidator.cpp" />
+    <ClCompile Include="..\Source\Server\ChatService.cpp" />
+    <ClCompile Include="..\Source\Server\ChatUserTypes.cpp" />
+    <ClCompile Include="..\Source\Server\CommandStreamWatcher.cpp" />
+    <ClCompile Include="..\Source\Server\Entity.cpp" />
+    <ClCompile Include="..\Source\Server\EntityBuilder.cpp" />
+    <ClCompile Include="..\Source\Server\EntityManager.cpp" />
+    <ClCompile Include="..\Source\Server\Group.cpp" />
+    <ClCompile Include="..\Source\Server\GroupManager.cpp" />
+    <ClCompile Include="..\Source\Server\Launcher.cpp" />
+    <ClCompile Include="..\Source\Server\NameVerifier.cpp" />
+    <ClCompile Include="..\Source\Server\Player.cpp" />
+    <ClCompile Include="..\Source\Server\Realm.cpp" />
+    <ClCompile Include="..\Source\Server\RealmManager.cpp" />
+    <ClCompile Include="..\Source\Server\Server.cpp" />
+    <ClCompile Include="..\Source\Server\SessionManager.cpp" />
+    <ClCompile Include="..\Source\Server\StatSheet.cpp" />
+    <ClCompile Include="..\Source\Server\Zone.cpp" />
+    <ClCompile Include="..\Source\Server\ZoneManager.cpp" />
+    <ClCompile Include="..\Source\SharedNetworking\NetworkMessage.cpp" />
+    <ClCompile Include="..\Source\Timing\TimerManager.cpp" />
+    <ClCompile Include="..\Source\Utilities\FileListing.cpp" />
+    <ClCompile Include="..\Source\Utilities\FileUtils.cpp" />
+    <ClCompile Include="..\Source\Utilities\InfoStore.cpp" />
+    <ClCompile Include="..\Source\Utilities\NCFFile.cpp" />
+    <ClCompile Include="..\Source\Utilities\Task.cpp" />
+    <ClCompile Include="..\Source\Utilities\TaskExecutor.cpp" />
+    <ClCompile Include="..\Source\Utilities\TaskWait.cpp" />
+    <ClCompile Include="..\Source\Utilities\Utils.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

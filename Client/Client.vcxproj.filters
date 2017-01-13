@@ -1,0 +1,756 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\UserInterface">
+      <UniqueIdentifier>{2fa4e4af-ea97-4102-b8d3-966664ba2be2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UserInterface">
+      <UniqueIdentifier>{d3682b3e-5447-442c-b914-a60e8723fb78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utilities">
+      <UniqueIdentifier>{b231aa1b-7b14-43f3-a6e3-d95dac96008b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utilities">
+      <UniqueIdentifier>{5e1a89b5-ae26-4f86-a66b-8c35f44dbded}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\AudioManagement">
+      <UniqueIdentifier>{7365b21b-30d6-4d88-b48b-ea2baf169d7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Client">
+      <UniqueIdentifier>{b6f98c23-18b0-41ba-9d8b-5b227793e766}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ClientNetworking">
+      <UniqueIdentifier>{bde2ace7-184f-4a59-8858-850406111f78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AudioManagement">
+      <UniqueIdentifier>{804e8c93-9bef-41db-84bf-9e7435370865}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Client">
+      <UniqueIdentifier>{7d108476-b616-4365-8c8c-5b331d88da28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ClientNetwork">
+      <UniqueIdentifier>{bfab5cef-ee0e-4ab0-8908-ebdd70fec8b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UserInterface\Components">
+      <UniqueIdentifier>{61297f74-cb5a-4a8f-981b-0a19118540eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UserInterface\Animations">
+      <UniqueIdentifier>{871a4830-f425-403e-9b6e-69ba09154ea7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UserInterface\Components">
+      <UniqueIdentifier>{4fcc3a9f-4d05-4c6d-85c7-78a5238b6155}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UserInterface\Animations">
+      <UniqueIdentifier>{a479bf38-e465-4870-a25b-d530dc5c1aef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UserInterface\Component Extensions">
+      <UniqueIdentifier>{e185a731-e47e-4e02-b30d-2e486c8105ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UserInterface\Component Extensions">
+      <UniqueIdentifier>{27cd72b2-173e-4f6d-8a68-39f853fc2d64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Rendering">
+      <UniqueIdentifier>{08a5d221-919d-4201-8d62-dcb6d12a6df5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Rendering">
+      <UniqueIdentifier>{67427c0f-5f81-4a5b-aee5-26905c444387}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UserInterface\Construction/Destruction">
+      <UniqueIdentifier>{ecc11ccc-45b9-4bba-8af9-a7bcaa91b77e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UserInterface\Construction/Destruction">
+      <UniqueIdentifier>{ecafa4e5-a5e8-4294-891a-e8bd31e2b729}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SharedNetworking">
+      <UniqueIdentifier>{471a8400-538e-46c5-94a4-20e0c7b9ae82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SharedNetworking">
+      <UniqueIdentifier>{48369a0c-e737-47bc-8ae1-f803c4101e68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Timing">
+      <UniqueIdentifier>{8cd6b2b2-7c68-420d-bd3f-f2f889f983fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Timing">
+      <UniqueIdentifier>{7bca0d23-c486-478d-bcca-edf3bdcb148c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Collisions">
+      <UniqueIdentifier>{c811bdc2-4d7e-4c6d-8689-95cd1dcfaafb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Collisions">
+      <UniqueIdentifier>{bb469ee8-0426-494c-ba66-d9e8ae5e629b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Include\UserInterface\Keybind.h">
+      <Filter>Header Files\UserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\KeybindManager.h">
+      <Filter>Header Files\UserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\Renderable.h">
+      <Filter>Header Files\UserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIComponentListener.h">
+      <Filter>Header Files\UserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UICursor.h">
+      <Filter>Header Files\UserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UICursorListener.h">
+      <Filter>Header Files\UserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIFocusableListener.h">
+      <Filter>Header Files\UserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIFocusManager.h">
+      <Filter>Header Files\UserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIManagedQueryNode.h">
+      <Filter>Header Files\UserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIManager.h">
+      <Filter>Header Files\UserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIQueryAnalyser.h">
+      <Filter>Header Files\UserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIQueryNode.h">
+      <Filter>Header Files\UserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIQueryNodeListener.h">
+      <Filter>Header Files\UserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIQueryRegister.h">
+      <Filter>Header Files\UserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIResourceManager.h">
+      <Filter>Header Files\UserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIText.h">
+      <Filter>Header Files\UserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UITextStyle.h">
+      <Filter>Header Files\UserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UITooltip.h">
+      <Filter>Header Files\UserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UITooltipListener.h">
+      <Filter>Header Files\UserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIWindowListener.h">
+      <Filter>Header Files\UserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Utilities\FileUtils.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Utilities\Listenable.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Utilities\MathConstants.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Utilities\Task.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Utilities\TaskExecutor.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Utilities\TaskListener.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Utilities\Utils.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Utilities\NCFFile.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Utilities\Size.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Utilities\Rect.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIComponentAnimation.h">
+      <Filter>Header Files\UserInterface\Animations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIButton.h">
+      <Filter>Header Files\UserInterface\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIFrame.h">
+      <Filter>Header Files\UserInterface\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIImage.h">
+      <Filter>Header Files\UserInterface\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UILabel.h">
+      <Filter>Header Files\UserInterface\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIListBox.h">
+      <Filter>Header Files\UserInterface\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIProgressBarColored.h">
+      <Filter>Header Files\UserInterface\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UITextBox.h">
+      <Filter>Header Files\UserInterface\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIProgressBarTextured.h">
+      <Filter>Header Files\UserInterface\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIProgressBar.h">
+      <Filter>Header Files\UserInterface\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UICheckBox.h">
+      <Filter>Header Files\UserInterface\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIComponentAnimationConfig.h">
+      <Filter>Header Files\UserInterface\Animations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIComponentExtension.h">
+      <Filter>Header Files\UserInterface\Component Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIBorderExtension.h">
+      <Filter>Header Files\UserInterface\Component Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIBorder.h">
+      <Filter>Header Files\UserInterface\Component Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIExtendableComponent.h">
+      <Filter>Header Files\UserInterface\Component Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIManagedComponentExtension.h">
+      <Filter>Header Files\UserInterface\Component Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UITooltipExtension.h">
+      <Filter>Header Files\UserInterface\Component Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UITextureExtension.h">
+      <Filter>Header Files\UserInterface\Component Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIAudioExtension.h">
+      <Filter>Header Files\UserInterface\Component Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UITextureExtensionConfig.h">
+      <Filter>Header Files\UserInterface\Component Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIRoot.h">
+      <Filter>Header Files\UserInterface\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIComponent.h">
+      <Filter>Header Files\UserInterface\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIAudioExtensionConfig.h">
+      <Filter>Header Files\UserInterface\Component Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIAudioManager.h">
+      <Filter>Header Files\UserInterface\Component Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIAudioChannel.h">
+      <Filter>Header Files\UserInterface\Component Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIAudioConfigListener.h">
+      <Filter>Header Files\UserInterface\Component Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIAnimationExtension.h">
+      <Filter>Header Files\UserInterface\Component Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Utilities\TaskWait.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Rendering\Actor.h">
+      <Filter>Header Files\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Rendering\Animation.h">
+      <Filter>Header Files\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Rendering\AnimationConfig.h">
+      <Filter>Header Files\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Rendering\Model.h">
+      <Filter>Header Files\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Rendering\ModelAttachmentPoint.h">
+      <Filter>Header Files\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Rendering\ModelConfig.h">
+      <Filter>Header Files\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Rendering\ModelList.h">
+      <Filter>Header Files\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Rendering\ModelRemovalToken.h">
+      <Filter>Header Files\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Rendering\ModelSet.h">
+      <Filter>Header Files\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Rendering\Renderer.h">
+      <Filter>Header Files\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Rendering\RenderLayer.h">
+      <Filter>Header Files\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Rendering\TextureList.h">
+      <Filter>Header Files\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Rendering\ModelHierarchyNode.h">
+      <Filter>Header Files\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Rendering\Entity.h">
+      <Filter>Header Files\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Client\Map.h">
+      <Filter>Header Files\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Client\GameWorld.h">
+      <Filter>Header Files\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Client\Player.h">
+      <Filter>Header Files\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIBuilder.h">
+      <Filter>Header Files\UserInterface\Construction/Destruction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIExtendedComponent.h">
+      <Filter>Header Files\UserInterface\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIFocusableComponent.h">
+      <Filter>Header Files\UserInterface\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\SharedNetworking\NetworkInstructionDefinitions.h">
+      <Filter>Header Files\SharedNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\SharedNetworking\NetworkMessage.h">
+      <Filter>Header Files\SharedNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Client\Client.h">
+      <Filter>Header Files\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Utilities\FileListing.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ClientNetworking\NetworkManager.h">
+      <Filter>Header Files\ClientNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Utilities\InfoStore.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ClientNetworking\NetworkConnectionListener.h">
+      <Filter>Header Files\ClientNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Client\SlideshowBackground.h">
+      <Filter>Header Files\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Timing\TimerListener.h">
+      <Filter>Header Files\Timing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Timing\TimerManager.h">
+      <Filter>Header Files\Timing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UI.h">
+      <Filter>Header Files\UserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ClientNetworking\NetworkTCPHandler.h">
+      <Filter>Header Files\ClientNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ClientNetworking\NetworkUDPHandler.h">
+      <Filter>Header Files\ClientNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Client\GameState.h">
+      <Filter>Header Files\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Client\GameStateCharacterSelection.h">
+      <Filter>Header Files\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Client\GameStateInGame.h">
+      <Filter>Header Files\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Client\GameStateMainMenu.h">
+      <Filter>Header Files\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Client\GameStateRealmSelection.h">
+      <Filter>Header Files\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Client\GameStateSplashScreen.h">
+      <Filter>Header Files\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Client\GameComponentsPack.h">
+      <Filter>Header Files\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\EventInfo.h">
+      <Filter>Header Files\UserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\EventTypes.h">
+      <Filter>Header Files\UserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UICursorManager.h">
+      <Filter>Header Files\UserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\KeybindSet.h">
+      <Filter>Header Files\UserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\KeybindAction.h">
+      <Filter>Header Files\UserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\KeyAction.h">
+      <Filter>Header Files\UserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\AudioManagement\AudioChannel.h">
+      <Filter>Header Files\AudioManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\AudioManagement\AudioChannelListener.h">
+      <Filter>Header Files\AudioManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\AudioManagement\SoundDeleteInfo.h">
+      <Filter>Header Files\AudioManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\AudioManagement\SoundNode.h">
+      <Filter>Header Files\AudioManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\AudioManagement\SoundNodeListener.h">
+      <Filter>Header Files\AudioManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\AudioManagement\MusicFadeInfo.h">
+      <Filter>Header Files\AudioManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\AudioManagement\AudioManager.h">
+      <Filter>Header Files\AudioManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\AudioManagement\MusicQueueInfo.h">
+      <Filter>Header Files\AudioManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\SharedNetworking\NetworkEnums.h">
+      <Filter>Header Files\SharedNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Client\MapLoader.h">
+      <Filter>Header Files\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Client\MapManager.h">
+      <Filter>Header Files\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Client\EntityManager.h">
+      <Filter>Header Files\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Client\EntityBuilder.h">
+      <Filter>Header Files\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Client\PlayerCamera.h">
+      <Filter>Header Files\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\Mousebind.h">
+      <Filter>Header Files\UserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\MousebindSet.h">
+      <Filter>Header Files\UserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\MouseAction.h">
+      <Filter>Header Files\UserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\MousebindAction.h">
+      <Filter>Header Files\UserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\MousebindManager.h">
+      <Filter>Header Files\UserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\MouseActionInfo.h">
+      <Filter>Header Files\UserInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\UserInterface\UIAnimationExecutor.h">
+      <Filter>Header Files\UserInterface\Animations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Client\CharacterInfo.h">
+      <Filter>Header Files\Client</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Source\UserInterface\Keybind.cpp">
+      <Filter>Source Files\UserInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\KeybindManager.cpp">
+      <Filter>Source Files\UserInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UICursor.cpp">
+      <Filter>Source Files\UserInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UIFocusManager.cpp">
+      <Filter>Source Files\UserInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UIManagedQueryNode.cpp">
+      <Filter>Source Files\UserInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UIManager.cpp">
+      <Filter>Source Files\UserInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UIQueryAnalyser.cpp">
+      <Filter>Source Files\UserInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UIQueryNode.cpp">
+      <Filter>Source Files\UserInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UIQueryRegister.cpp">
+      <Filter>Source Files\UserInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UIResourceManager.cpp">
+      <Filter>Source Files\UserInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UIText.cpp">
+      <Filter>Source Files\UserInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UITextStyle.cpp">
+      <Filter>Source Files\UserInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UITooltip.cpp">
+      <Filter>Source Files\UserInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Utilities\FileUtils.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Utilities\Task.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Utilities\TaskExecutor.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Utilities\Utils.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Utilities\NCFFile.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Client\Launcher.cpp">
+      <Filter>Source Files\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Utilities\Size.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Utilities\Rect.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UIButton.cpp">
+      <Filter>Source Files\UserInterface\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UIFrame.cpp">
+      <Filter>Source Files\UserInterface\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UIImage.cpp">
+      <Filter>Source Files\UserInterface\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UICheckBox.cpp">
+      <Filter>Source Files\UserInterface\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UIListBox.cpp">
+      <Filter>Source Files\UserInterface\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UILabel.cpp">
+      <Filter>Source Files\UserInterface\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UIProgressBarTextured.cpp">
+      <Filter>Source Files\UserInterface\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UIProgressBarColored.cpp">
+      <Filter>Source Files\UserInterface\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UITextBox.cpp">
+      <Filter>Source Files\UserInterface\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UIComponentAnimation.cpp">
+      <Filter>Source Files\UserInterface\Animations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UIBorderExtension.cpp">
+      <Filter>Source Files\UserInterface\Component Extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UIBorder.cpp">
+      <Filter>Source Files\UserInterface\Component Extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UIAudioExtension.cpp">
+      <Filter>Source Files\UserInterface\Component Extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UIAudioManager.cpp">
+      <Filter>Source Files\UserInterface\Component Extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UITooltipExtension.cpp">
+      <Filter>Source Files\UserInterface\Component Extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UITextureExtension.cpp">
+      <Filter>Source Files\UserInterface\Component Extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UIComponentExtension.cpp">
+      <Filter>Source Files\UserInterface\Component Extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UIProgressBar.cpp">
+      <Filter>Source Files\UserInterface\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UIRoot.cpp">
+      <Filter>Source Files\UserInterface\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UIComponentListener.cpp">
+      <Filter>Source Files\UserInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UIComponent.cpp">
+      <Filter>Source Files\UserInterface\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UIAnimationExtension.cpp">
+      <Filter>Source Files\UserInterface\Component Extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Utilities\TaskWait.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Rendering\Actor.cpp">
+      <Filter>Source Files\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Rendering\Animation.cpp">
+      <Filter>Source Files\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Rendering\Model.cpp">
+      <Filter>Source Files\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Rendering\ModelList.cpp">
+      <Filter>Source Files\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Rendering\Renderer.cpp">
+      <Filter>Source Files\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Rendering\RenderLayer.cpp">
+      <Filter>Source Files\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Rendering\TextureList.cpp">
+      <Filter>Source Files\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Client\Entity.cpp">
+      <Filter>Source Files\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Client\Map.cpp">
+      <Filter>Source Files\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Client\GameWorld.cpp">
+      <Filter>Source Files\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Client\Player.cpp">
+      <Filter>Source Files\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UIBuilder.cpp">
+      <Filter>Source Files\UserInterface\Construction/Destruction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UIExtendedComponent.cpp">
+      <Filter>Source Files\UserInterface\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UIExtendableComponent.cpp">
+      <Filter>Source Files\UserInterface\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UIManagedComponentExtension.cpp">
+      <Filter>Source Files\UserInterface\Component Extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UIFocusableComponent.cpp">
+      <Filter>Source Files\UserInterface\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\SharedNetworking\NetworkMessage.cpp">
+      <Filter>Source Files\SharedNetworking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Client\Client.cpp">
+      <Filter>Source Files\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Utilities\FileListing.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\ClientNetworking\NetworkManager.cpp">
+      <Filter>Source Files\ClientNetwork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Utilities\InfoStore.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Client\SlideshowBackground.cpp">
+      <Filter>Source Files\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Timing\TimerManager.cpp">
+      <Filter>Source Files\Timing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UI.cpp">
+      <Filter>Source Files\UserInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\ClientNetworking\NetworkTCPHandler.cpp">
+      <Filter>Source Files\ClientNetwork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\ClientNetworking\NetworkUDPHandler.cpp">
+      <Filter>Source Files\ClientNetwork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Client\GameState.cpp">
+      <Filter>Source Files\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Client\GameStateCharacterSelection.cpp">
+      <Filter>Source Files\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Client\GameStateInGame.cpp">
+      <Filter>Source Files\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Client\GameStateMainMenu.cpp">
+      <Filter>Source Files\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Client\GameStateRealmSelection.cpp">
+      <Filter>Source Files\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Client\GameStateSplashScreen.cpp">
+      <Filter>Source Files\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\KeybindSet.cpp">
+      <Filter>Source Files\UserInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UICursorManager.cpp">
+      <Filter>Source Files\UserInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\KeybindAction.cpp">
+      <Filter>Source Files\UserInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\AudioManagement\AudioChannel.cpp">
+      <Filter>Source Files\AudioManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\AudioManagement\SoundNode.cpp">
+      <Filter>Source Files\AudioManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\AudioManagement\AudioManager.cpp">
+      <Filter>Source Files\AudioManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Client\MapLoader.cpp">
+      <Filter>Source Files\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Client\MapManager.cpp">
+      <Filter>Source Files\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Client\EntityManager.cpp">
+      <Filter>Source Files\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Client\EntityBuilder.cpp">
+      <Filter>Source Files\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Client\PlayerCamera.cpp">
+      <Filter>Source Files\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\Mousebind.cpp">
+      <Filter>Source Files\UserInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\MousebindSet.cpp">
+      <Filter>Source Files\UserInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\MousebindManager.cpp">
+      <Filter>Source Files\UserInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\MousebindAction.cpp">
+      <Filter>Source Files\UserInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UserInterface\UIAnimationExecutor.cpp">
+      <Filter>Source Files\UserInterface\Animations</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

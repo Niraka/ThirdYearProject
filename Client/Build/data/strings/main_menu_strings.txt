@@ -1,0 +1,30 @@
+~login
+Login
+~register
+Register
+~options
+Options
+~quit
+Quit
+~username
+Username
+~password
+Password
+~title_main
+Evir
+~title_sub
+The Dawn of Demagra
+~server_status_online
+~server_status_offline
+~register_info
+Register a new account by entering your desired username and password and clicking the register button. Note that the username you select here is not the name players will see in game.
+~login_info
+Enter your username and password. New players should first create their accounts via the registration window.
+~options_info
+Options coming soon..
+~submit
+Submit
+~enter_pass
+Enter password
+~enter_user
+Enter username

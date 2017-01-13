@@ -1,0 +1,5 @@
+~models
+player character/player.model
+arm character/arm.model
+sword weapons/sword.model
+shield armours/shield.model

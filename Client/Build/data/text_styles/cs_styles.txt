@@ -1,0 +1,8 @@
+~character_name
+f_default
+black
+27
+~character_info
+f_default
+black
+22

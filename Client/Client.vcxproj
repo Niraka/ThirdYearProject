@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{88F75E76-821C-49BC-82D0-470B32E46CE0}</ProjectGuid>
+    <RootNamespace>Client</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>$(ProjectDir)Temporary\</IntDir>
+    <TargetName>Client</TargetName>
+    <OutDir>$(ProjectDir)Build\$(Configuration)\</OutDir>
+    <IncludePath>$(SolutionDir)\Include\AudioManagement;$(SolutionDir)\Include\Client;$(SolutionDir)\Include\ClientNetworking;$(SolutionDir)\Include\Rendering;$(SolutionDir)\Include\SharedNetworking;$(SolutionDir)\Include\UserInterface;$(SolutionDir)\Include\Utilities;$(SolutionDir)\Include\Timing;$(SolutionDir)\Include\CollisionsSystem;$(IncludePath)</IncludePath>
+    <SourcePath>$(SolutionDir)\Source\UserInterface;$(SolutionDir)\Source\Utilities;$(SolutionDir)\Source\ClientNetworking;$(SolutionDir)\Source\Client;$(SolutionDir)\Source\AudioManagement;$(SolutionDir)\Source\Rendering;$(SolutionDir)\Source\SharedNetworking;$(SolutionDir)\Source\Timing;$(SolutionDir)\Source\CollisionsSystem;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>$(ProjectDir)Temporary\</IntDir>
+    <TargetName>Client</TargetName>
+    <OutDir>$(ProjectDir)Build\$(Configuration)\</OutDir>
+    <IncludePath>$(SolutionDir)\Include\AudioManagement;$(SolutionDir)\Include\Client;$(SolutionDir)\Include\ClientNetworking;$(SolutionDir)\Include\Rendering;$(SolutionDir)\Include\SharedNetworking;$(SolutionDir)\Include\UserInterface;$(SolutionDir)\Include\Utilities;$(SolutionDir)\Include\Timing;$(SolutionDir)\Include\CollisionsSystem;$(IncludePath)</IncludePath>
+    <SourcePath>$(SolutionDir)\Source\UserInterface;$(SolutionDir)\Source\Utilities;$(SolutionDir)\Source\ClientNetworking;$(SolutionDir)\Source\Client;$(SolutionDir)\Source\AudioManagement;$(SolutionDir)\Source\Rendering;$(SolutionDir)\Source\SharedNetworking;$(SolutionDir)\Source\Timing;$(SolutionDir)\Source\CollisionsSystem;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)Libraries\SFML-2.1\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>sfml-system-d.lib;sfml-main-d.lib;sfml-window-d.lib;sfml-audio-d.lib;sfml-graphics-d.lib;sfml-network-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\Libraries\SFML-2.1\lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)Libraries\SFML-2.1\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>sfml-system.lib;sfml-main.lib;sfml-window.lib;sfml-audio.lib;sfml-graphics.lib;sfml-network.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\Libraries\SFML-2.1\lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Include\AudioManagement\AudioChannel.h" />
+    <ClInclude Include="..\Include\AudioManagement\AudioChannelListener.h" />
+    <ClInclude Include="..\Include\AudioManagement\AudioManager.h" />
+    <ClInclude Include="..\Include\AudioManagement\MusicFadeInfo.h" />
+    <ClInclude Include="..\Include\AudioManagement\MusicQueueInfo.h" />
+    <ClInclude Include="..\Include\AudioManagement\SoundDeleteInfo.h" />
+    <ClInclude Include="..\Include\AudioManagement\SoundNode.h" />
+    <ClInclude Include="..\Include\AudioManagement\SoundNodeListener.h" />
+    <ClInclude Include="..\Include\ClientNetworking\NetworkConnectionListener.h" />
+    <ClInclude Include="..\Include\ClientNetworking\NetworkManager.h" />
+    <ClInclude Include="..\Include\ClientNetworking\NetworkTCPHandler.h" />
+    <ClInclude Include="..\Include\ClientNetworking\NetworkUDPHandler.h" />
+    <ClInclude Include="..\Include\Client\CharacterInfo.h" />
+    <ClInclude Include="..\Include\Client\Client.h" />
+    <ClInclude Include="..\Include\Client\EntityBuilder.h" />
+    <ClInclude Include="..\Include\Client\EntityManager.h" />
+    <ClInclude Include="..\Include\Client\GameComponentsPack.h" />
+    <ClInclude Include="..\Include\Client\GameState.h" />
+    <ClInclude Include="..\Include\Client\GameStateCharacterSelection.h" />
+    <ClInclude Include="..\Include\Client\GameStateInGame.h" />
+    <ClInclude Include="..\Include\Client\GameStateMainMenu.h" />
+    <ClInclude Include="..\Include\Client\GameStateRealmSelection.h" />
+    <ClInclude Include="..\Include\Client\GameStateSplashScreen.h" />
+    <ClInclude Include="..\Include\Client\GameWorld.h" />
+    <ClInclude Include="..\include\Client\Map.h" />
+    <ClInclude Include="..\Include\Client\MapLoader.h" />
+    <ClInclude Include="..\Include\Client\MapManager.h" />
+    <ClInclude Include="..\Include\Client\Player.h" />
+    <ClInclude Include="..\Include\Client\PlayerCamera.h" />
+    <ClInclude Include="..\Include\Client\SlideshowBackground.h" />
+    <ClInclude Include="..\Include\Rendering\Actor.h" />
+    <ClInclude Include="..\Include\Rendering\Animation.h" />
+    <ClInclude Include="..\Include\Rendering\AnimationConfig.h" />
+    <ClInclude Include="..\Include\Rendering\Entity.h" />
+    <ClInclude Include="..\Include\Rendering\Model.h" />
+    <ClInclude Include="..\Include\Rendering\ModelAttachmentPoint.h" />
+    <ClInclude Include="..\Include\Rendering\ModelConfig.h" />
+    <ClInclude Include="..\Include\Rendering\ModelHierarchyNode.h" />
+    <ClInclude Include="..\Include\Rendering\ModelList.h" />
+    <ClInclude Include="..\Include\Rendering\ModelRemovalToken.h" />
+    <ClInclude Include="..\Include\Rendering\ModelSet.h" />
+    <ClInclude Include="..\Include\Rendering\Renderer.h" />
+    <ClInclude Include="..\Include\Rendering\RenderLayer.h" />
+    <ClInclude Include="..\Include\Rendering\TextureList.h" />
+    <ClInclude Include="..\Include\SharedNetworking\NetworkEnums.h" />
+    <ClInclude Include="..\Include\SharedNetworking\NetworkInstructionDefinitions.h" />
+    <ClInclude Include="..\Include\SharedNetworking\NetworkMessage.h" />
+    <ClInclude Include="..\Include\Timing\TimerListener.h" />
+    <ClInclude Include="..\Include\Timing\TimerManager.h" />
+    <ClInclude Include="..\Include\UserInterface\EventInfo.h" />
+    <ClInclude Include="..\Include\UserInterface\EventTypes.h" />
+    <ClInclude Include="..\Include\UserInterface\KeyAction.h" />
+    <ClInclude Include="..\Include\UserInterface\KeybindSet.h" />
+    <ClInclude Include="..\Include\UserInterface\MouseAction.h" />
+    <ClInclude Include="..\Include\UserInterface\MouseActionInfo.h" />
+    <ClInclude Include="..\Include\UserInterface\Mousebind.h" />
+    <ClInclude Include="..\Include\UserInterface\MousebindAction.h" />
+    <ClInclude Include="..\Include\UserInterface\MousebindManager.h" />
+    <ClInclude Include="..\Include\UserInterface\MousebindSet.h" />
+    <ClInclude Include="..\Include\UserInterface\UI.h" />
+    <ClInclude Include="..\Include\UserInterface\UIAnimationExecutor.h" />
+    <ClInclude Include="..\Include\UserInterface\UICursorManager.h" />
+    <ClInclude Include="..\Include\UserInterface\KeybindAction.h" />
+    <ClInclude Include="..\Include\UserInterface\Keybind.h" />
+    <ClInclude Include="..\Include\UserInterface\KeybindManager.h" />
+    <ClInclude Include="..\Include\UserInterface\Renderable.h" />
+    <ClInclude Include="..\Include\UserInterface\UIExtendedComponent.h" />
+    <ClInclude Include="..\Include\UserInterface\UIAnimationExtension.h" />
+    <ClInclude Include="..\Include\UserInterface\UIAudioExtensionConfig.h" />
+    <ClInclude Include="..\Include\UserInterface\UIAudioChannel.h" />
+    <ClInclude Include="..\Include\UserInterface\UIAudioConfigListener.h" />
+    <ClInclude Include="..\Include\UserInterface\UIAudioExtension.h" />
+    <ClInclude Include="..\Include\UserInterface\UIAudioManager.h" />
+    <ClInclude Include="..\Include\UserInterface\UIBorder.h" />
+    <ClInclude Include="..\Include\UserInterface\UIBorderExtension.h" />
+    <ClInclude Include="..\Include\UserInterface\UIBuilder.h" />
+    <ClInclude Include="..\Include\UserInterface\UIButton.h" />
+    <ClInclude Include="..\Include\UserInterface\UICheckBox.h" />
+    <ClInclude Include="..\Include\UserInterface\UIComponent.h" />
+    <ClInclude Include="..\Include\UserInterface\UIComponentAnimation.h" />
+    <ClInclude Include="..\Include\UserInterface\UIComponentAnimationConfig.h" />
+    <ClInclude Include="..\Include\UserInterface\UIComponentExtension.h" />
+    <ClInclude Include="..\Include\UserInterface\UIComponentListener.h" />
+    <ClInclude Include="..\Include\UserInterface\UICursor.h" />
+    <ClInclude Include="..\Include\UserInterface\UICursorListener.h" />
+    <ClInclude Include="..\Include\UserInterface\UIExtendableComponent.h" />
+    <ClInclude Include="..\Include\UserInterface\UIFocusableComponent.h" />
+    <ClInclude Include="..\Include\UserInterface\UIFocusableListener.h" />
+    <ClInclude Include="..\Include\UserInterface\UIFocusManager.h" />
+    <ClInclude Include="..\Include\UserInterface\UIFrame.h" />
+    <ClInclude Include="..\Include\UserInterface\UIImage.h" />
+    <ClInclude Include="..\Include\UserInterface\UILabel.h" />
+    <ClInclude Include="..\Include\UserInterface\UIListBox.h" />
+    <ClInclude Include="..\Include\UserInterface\UIManagedComponentExtension.h" />
+    <ClInclude Include="..\Include\UserInterface\UIManagedQueryNode.h" />
+    <ClInclude Include="..\Include\UserInterface\UIManager.h" />
+    <ClInclude Include="..\Include\UserInterface\UIProgressBar.h" />
+    <ClInclude Include="..\Include\UserInterface\UIProgressBarColored.h" />
+    <ClInclude Include="..\Include\UserInterface\UIProgressBarTextured.h" />
+    <ClInclude Include="..\Include\UserInterface\UIQueryAnalyser.h" />
+    <ClInclude Include="..\Include\UserInterface\UIQueryNode.h" />
+    <ClInclude Include="..\Include\UserInterface\UIQueryNodeListener.h" />
+    <ClInclude Include="..\Include\UserInterface\UIQueryRegister.h" />
+    <ClInclude Include="..\Include\UserInterface\UIResourceManager.h" />
+    <ClInclude Include="..\Include\UserInterface\UIRoot.h" />
+    <ClInclude Include="..\Include\UserInterface\UIText.h" />
+    <ClInclude Include="..\Include\UserInterface\UITextBox.h" />
+    <ClInclude Include="..\Include\UserInterface\UITextStyle.h" />
+    <ClInclude Include="..\Include\UserInterface\UITextureExtension.h" />
+    <ClInclude Include="..\Include\UserInterface\UITextureExtensionConfig.h" />
+    <ClInclude Include="..\Include\UserInterface\UITooltip.h" />
+    <ClInclude Include="..\Include\UserInterface\UITooltipExtension.h" />
+    <ClInclude Include="..\Include\UserInterface\UITooltipListener.h" />
+    <ClInclude Include="..\Include\UserInterface\UIWindowListener.h" />
+    <ClInclude Include="..\Include\Utilities\InfoStore.h" />
+    <ClInclude Include="..\Include\Utilities\FileListing.h" />
+    <ClInclude Include="..\Include\Utilities\FileUtils.h" />
+    <ClInclude Include="..\Include\Utilities\Listenable.h" />
+    <ClInclude Include="..\Include\Utilities\MathConstants.h" />
+    <ClInclude Include="..\Include\Utilities\NCFFile.h" />
+    <ClInclude Include="..\Include\Utilities\Rect.h" />
+    <ClInclude Include="..\Include\Utilities\Size.h" />
+    <ClInclude Include="..\Include\Utilities\Task.h" />
+    <ClInclude Include="..\Include\Utilities\TaskExecutor.h" />
+    <ClInclude Include="..\Include\Utilities\TaskListener.h" />
+    <ClInclude Include="..\Include\Utilities\TaskWait.h" />
+    <ClInclude Include="..\Include\Utilities\Utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Source\AudioManagement\AudioChannel.cpp" />
+    <ClCompile Include="..\Source\AudioManagement\AudioManager.cpp" />
+    <ClCompile Include="..\Source\AudioManagement\SoundNode.cpp" />
+    <ClCompile Include="..\Source\ClientNetworking\NetworkManager.cpp" />
+    <ClCompile Include="..\Source\ClientNetworking\NetworkTCPHandler.cpp" />
+    <ClCompile Include="..\Source\ClientNetworking\NetworkUDPHandler.cpp" />
+    <ClCompile Include="..\Source\Client\Client.cpp" />
+    <ClCompile Include="..\Source\Client\Entity.cpp" />
+    <ClCompile Include="..\Source\Client\EntityBuilder.cpp" />
+    <ClCompile Include="..\Source\Client\EntityManager.cpp" />
+    <ClCompile Include="..\Source\Client\GameState.cpp" />
+    <ClCompile Include="..\Source\Client\GameStateCharacterSelection.cpp" />
+    <ClCompile Include="..\Source\Client\GameStateInGame.cpp" />
+    <ClCompile Include="..\Source\Client\GameStateMainMenu.cpp" />
+    <ClCompile Include="..\Source\Client\GameStateRealmSelection.cpp" />
+    <ClCompile Include="..\Source\Client\GameStateSplashScreen.cpp" />
+    <ClCompile Include="..\Source\Client\GameWorld.cpp" />
+    <ClCompile Include="..\Source\Client\Launcher.cpp" />
+    <ClCompile Include="..\source\Client\Map.cpp" />
+    <ClCompile Include="..\Source\Client\MapLoader.cpp" />
+    <ClCompile Include="..\Source\Client\MapManager.cpp" />
+    <ClCompile Include="..\Source\Client\Player.cpp" />
+    <ClCompile Include="..\Source\Client\PlayerCamera.cpp" />
+    <ClCompile Include="..\Source\Client\SlideshowBackground.cpp" />
+    <ClCompile Include="..\Source\Rendering\Actor.cpp" />
+    <ClCompile Include="..\Source\Rendering\Animation.cpp" />
+    <ClCompile Include="..\Source\Rendering\Model.cpp" />
+    <ClCompile Include="..\Source\Rendering\ModelList.cpp" />
+    <ClCompile Include="..\Source\Rendering\Renderer.cpp" />
+    <ClCompile Include="..\Source\Rendering\RenderLayer.cpp" />
+    <ClCompile Include="..\Source\Rendering\TextureList.cpp" />
+    <ClCompile Include="..\Source\SharedNetworking\NetworkMessage.cpp" />
+    <ClCompile Include="..\Source\Timing\TimerManager.cpp" />
+    <ClCompile Include="..\Source\UserInterface\Keybind.cpp" />
+    <ClCompile Include="..\Source\UserInterface\KeybindAction.cpp" />
+    <ClCompile Include="..\Source\UserInterface\KeybindManager.cpp" />
+    <ClCompile Include="..\Source\UserInterface\KeybindSet.cpp" />
+    <ClCompile Include="..\Source\UserInterface\Mousebind.cpp" />
+    <ClCompile Include="..\Source\UserInterface\MousebindAction.cpp" />
+    <ClCompile Include="..\Source\UserInterface\MousebindManager.cpp" />
+    <ClCompile Include="..\Source\UserInterface\MousebindSet.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UI.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UIAnimationExecutor.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UICursorManager.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UIExtendedComponent.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UIAnimationExtension.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UIAudioExtension.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UIAudioManager.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UIBorder.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UIBorderExtension.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UIBuilder.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UIButton.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UICheckBox.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UIComponent.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UIComponentAnimation.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UIComponentExtension.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UIComponentListener.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UICursor.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UIExtendableComponent.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UIFocusableComponent.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UIFocusManager.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UIFrame.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UIImage.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UILabel.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UIListBox.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UIManagedComponentExtension.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UIManagedQueryNode.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UIManager.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UIProgressBar.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UIProgressBarColored.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UIProgressBarTextured.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UIQueryAnalyser.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UIQueryNode.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UIQueryRegister.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UIResourceManager.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UIRoot.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UIText.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UITextBox.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UITextStyle.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UITextureExtension.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UITooltip.cpp" />
+    <ClCompile Include="..\Source\UserInterface\UITooltipExtension.cpp" />
+    <ClCompile Include="..\Source\Utilities\InfoStore.cpp" />
+    <ClCompile Include="..\Source\Utilities\FileListing.cpp" />
+    <ClCompile Include="..\Source\Utilities\FileUtils.cpp" />
+    <ClCompile Include="..\Source\Utilities\NCFFile.cpp" />
+    <ClCompile Include="..\Source\Utilities\Rect.cpp" />
+    <ClCompile Include="..\Source\Utilities\Size.cpp" />
+    <ClCompile Include="..\Source\Utilities\Task.cpp" />
+    <ClCompile Include="..\Source\Utilities\TaskExecutor.cpp" />
+    <ClCompile Include="..\Source\Utilities\TaskWait.cpp" />
+    <ClCompile Include="..\Source\Utilities\Utils.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,68 @@
+~header
+in_game
+~resources
+t|t_chat_background|ui/chat_background.png
+t|t_icon_character_r|ui/character_icon_r.png
+t|t_icon_character_h|ui/character_icon_h.png
+t|t_icon_character_p|ui/character_icon_p.png
+t|t_icon_inventory_r|ui/inventory_icon_r.png
+t|t_icon_inventory_h|ui/inventory_icon_h.png
+t|t_icon_inventory_p|ui/inventory_icon_p.png
+t|t_icon_map_r|ui/map_icon_r.png
+t|t_icon_map_h|ui/map_icon_h.png
+t|t_icon_map_p|ui/map_icon_p.png
+t|t_icon_crafting_r|ui/crafting_icon_r.png
+t|t_icon_crafting_h|ui/crafting_icon_h.png
+t|t_icon_crafting_p|ui/crafting_icon_p.png
+t|t_icon_skills_r|ui/skills_icon_r.png
+t|t_icon_skills_h|ui/skills_icon_h.png
+t|t_icon_skills_p|ui/skills_icon_p.png
+t|t_icon_quests_r|ui/quests_icon_r.png
+t|t_icon_quests_h|ui/quests_icon_h.png
+t|t_icon_quests_p|ui/quests_icon_p.png
+t|t_icon_mail_r|ui/mail_icon_r.png
+t|t_icon_mail_h|ui/mail_icon_h.png
+t|t_icon_mail_p|ui/mail_icon_p.png
+t|t_icon_social_r|ui/social_icon_r.png
+t|t_icon_social_h|ui/social_icon_h.png
+t|t_icon_social_p|ui/social_icon_p.png
+t|t_icon_bug_report_r|ui/bug_report_icon_r.png
+t|t_icon_bug_report_h|ui/bug_report_icon_h.png
+t|t_icon_bug_report_p|ui/bug_report_icon_p.png
+t|t_icon_options_r|ui/options_icon_r.png
+t|t_icon_options_h|ui/options_icon_h.png
+t|t_icon_options_p|ui/options_icon_p.png
+t|t_menu_background|ui/menu_background.png
+t|t_experience_frame|ui/experience_frame.png
+o|custom_colors.txt
+o|standard_colors.txt
+f|f_default|default.ttf
+y|in_game_styles.txt
+e|in_game_strings.txt
+~animations
+~components
+f|fTop|x|0|x|0|c|1.00|x|80|tl|f|f|f|f|t|f|none|0|0|f|none|f|none|f|0|f|0
+i|iLeftMenus|x|0|x|0|c|0.3|c|1.00|tl|t|f|f|f|t|f|none|0|0|f|none|f|none|f|0|f|0|t_menu_background|f|none
+i|iRightMenus|x|0|x|0|c|0.3|c|1.00|tr|t|f|f|f|t|f|none|0|0|f|none|f|none|f|0|f|0|t_menu_background|f|none
+i|iExperienceFrame|x|0|x|0|c|0.4|c|1.00|tm|t|f|f|f|t|f|none|0|0|f|none|f|none|f|0|f|0|t_experience_frame|f|none
+b|bCharacter|x|15|x|10|x|50|x|50|tl|t|t|t|f|t|t|iLeftMenus|0|0|f|none|f|none|f|0|f|0|t|menu_tooltip|!Open the character tab|t_icon_character_r|t_icon_character_h|t_icon_character_p|f|none|f|t|f|f|f|f|none|none|-1
+b|bInventory|x|80|x|10|x|50|x|50|tl|t|t|t|f|t|t|iLeftMenus|0|0|f|none|f|none|f|0|f|0|t|menu_tooltip|!Open the inventory|t_icon_inventory_r|t_icon_inventory_h|t_icon_inventory_p|f|none|f|t|f|f|f|f|none|none|-1
+b|bMap|x|145|x|10|x|50|x|50|tl|t|t|t|f|t|t|iLeftMenus|0|0|f|none|f|none|f|0|f|0|t|menu_tooltip|!Open the map|t_icon_map_r|t_icon_map_h|t_icon_map_p|f|none|f|t|f|f|f|f|none|none|-1
+b|bCrafting|x|220|x|10|x|50|x|50|tl|t|t|t|f|t|t|iLeftMenus|0|0|f|none|f|none|f|0|f|0|t|menu_tooltip|!Open the crafting tab|t_icon_crafting_r|t_icon_crafting_h|t_icon_crafting_p|f|none|f|t|f|f|f|f|none|none|-1
+b|bSkills|x|295|x|10|x|50|x|50|tl|t|t|t|f|t|t|iLeftMenus|0|0|f|none|f|none|f|0|f|0|t|menu_tooltip|!Open the skills tab|t_icon_skills_r|t_icon_skills_h|t_icon_skills_p|f|none|f|t|f|f|f|f|none|none|-1
+b|bQuests|x|-295|x|10|x|50|x|50|tr|t|t|t|f|t|t|iRightMenus|0|0|f|none|f|none|f|0|f|0|t|menu_tooltip|!Open the quests tab|t_icon_quests_r|t_icon_quests_h|t_icon_quests_p|f|none|f|t|f|f|f|f|none|none|-1
+b|bMail|x|-220|x|10|x|50|x|50|tr|t|t|t|f|t|t|iRightMenus|0|0|f|none|f|none|f|0|f|0|t|menu_tooltip|!Open the mailbox|t_icon_mail_r|t_icon_mail_h|t_icon_mail_p|f|none|f|t|f|f|f|f|none|none|-1
+b|bSocial|x|-145|x|10|x|50|x|50|tr|t|t|t|f|t|t|iRightMenus|0|0|f|none|f|none|f|0|f|0|t|menu_tooltip|!Open the social tab|t_icon_social_r|t_icon_social_h|t_icon_social_p|f|none|f|t|f|f|f|f|none|none|-1
+b|bBugReport|x|-80|x|10|x|50|x|50|tr|t|t|t|f|t|t|iRightMenus|0|0|f|none|f|none|f|0|f|0|t|menu_tooltip|!Open the bug report window|t_icon_bug_report_r|t_icon_bug_report_h|t_icon_bug_report_p|f|none|f|t|f|f|f|f|none|none|-1
+b|bOptions|x|-15|x|10|x|50|x|50|tr|t|t|t|f|t|t|iRightMenus|0|0|f|none|f|none|f|0|f|0|t|menu_tooltip|!Open the options menu|t_icon_options_r|t_icon_options_h|t_icon_options_p|f|none|f|t|f|f|f|f|none|none|-1
+p|pExperienceBar|x|0|x|0|c|1|x|80|tl|f|f|f|f|t|f|none|0|0|f|none|f|none|f|0|f|0
+l|lExperience|x|0|x|0|c|1|x|80|tl|f|f|f|f|t|f|none|0|0|f|none|f|none|f|0|f|0
+s|sChatOutput|x|20|x|-55|x|400|x|250|bl|t|f|f|t|t|f|none|2|0|f|black|f|black|f|0|f|0|20|8|chat_output|t
+t|tChatInput|x|20|x|-20|x|400|x|30|bl|t|t|t|t|t|f|none|2|0|f|black|f|black|f|0|f|0|textbox_empty|textbox_text|none|none|50|f|*|transparent_white|black|15
+~hierarchy
+root|fTop|tChatInput|sChatOutput
+fTop|iLeftMenus|iRightMenus|iExperienceFrame
+iLeftMenus|bCharacter|bInventory|bMap|bCrafting|bSkills
+iRightMenus|bQuests|bMail|bSocial|bBugReport|bOptions
+iExperienceFrame|pExperienceBar
+pExperienceBar|lExperience

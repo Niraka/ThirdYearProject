@@ -1,0 +1,6 @@
+~textures
+player character/player.png
+arm character/arm.png
+leg character/leg.png
+sword weapons/sword.png
+shield armours/shield.png

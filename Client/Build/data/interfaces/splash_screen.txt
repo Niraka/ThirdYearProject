@@ -1,0 +1,14 @@
+~header
+splash_screen
+~resources
+t|t_logo|company_logo.png
+t|t_black|black.png
+~animations
+4|2000|t|0|255|f|x|0|x|0|x|0|x|0
+5|2000|t|255|0|f|x|0|x|0|x|0|x|0
+~components
+i|iSplashBackground|x|0|x|0|c|1|c|1|tl|t|f|f|f|t|f|none|0|0|f|none|f|none|f|0|f|0|t_black|f|black
+i|iSplashLogo|x|0|x|0|c|0.45|c|0.3|m|f|f|f|f|t|f|none|0|0|f|none|f|none|t|4|t|5|t_logo|f|black
+~hierarchy
+root|iSplashBackground
+iSplashBackground|iSplashLogo

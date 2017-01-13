@@ -1,0 +1,22 @@
+~cs_title_main
+Select a character
+~cs_title_create
+Create a new character
+~cs_create_instructions
+To create a new character, select a class and enter your desired name. Press the submit button when you're happy with your decisions.
+~cs_back
+Back
+~cs_create
+Create
+~cs_wraith_desc
+Wraith<n>A high speed, high damage melee assassin
+~cs_mage_desc
+Mage<n>A ranged caster that utilises frost and fire magic
+~cs_merc_desc
+Mercenary<n>A hard to kill melee brawler
+~cs_class_section
+Select a class
+~cs_name_section
+Enter your desired name and submit
+~cs_submit
+Submit

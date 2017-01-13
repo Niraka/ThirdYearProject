@@ -1,0 +1,8 @@
+~menu_tooltip
+f_default
+white
+20
+~chat_output
+f_default
+18
+white

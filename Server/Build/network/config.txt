@@ -1,0 +1,6 @@
+~config
+tcp_port=37102
+udp_port=37103
+max_tcp_connections=-1
+allow_multiple_connections=true
+network_id_seed=-1

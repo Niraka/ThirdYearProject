@@ -1,0 +1,6 @@
+~config
+local_udp_port=31000
+remote_udp_port=37103
+tcp_port=37102
+ip_address=127.0.0.1
+tcp_timeout=1000

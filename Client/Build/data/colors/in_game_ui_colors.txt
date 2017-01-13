@@ -1,0 +1,10 @@
+~health_bar_green
+0
+200
+0
+255
+~health_bar_red
+200
+0
+0
+255

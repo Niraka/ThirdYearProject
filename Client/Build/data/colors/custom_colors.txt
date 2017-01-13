@@ -1,0 +1,16 @@
+# A set of colors with unusual names that only make sense in the games context
+~buff
+0
+255
+255
+255
+~debuff
+153
+50
+204
+255
+~dark_white
+200
+200
+200
+255

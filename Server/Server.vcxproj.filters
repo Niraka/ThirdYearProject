@@ -1,0 +1,519 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Utilities">
+      <UniqueIdentifier>{fb8d041b-217e-48ae-9932-303df360b54d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utilities">
+      <UniqueIdentifier>{80809548-980e-4ac0-bb16-203de3ca062b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\AccountManagement">
+      <UniqueIdentifier>{e7ab2e10-2ca8-4f00-b49d-59783086fef4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AccountManagement">
+      <UniqueIdentifier>{fb0f471b-d56e-4457-95fc-0827f6d3ec1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Server">
+      <UniqueIdentifier>{dd3db76a-b056-4ce2-82a5-f9eeb7dacbc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server">
+      <UniqueIdentifier>{6f7ad74e-88b2-4ee2-95ad-573d06901762}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ServerNetworking">
+      <UniqueIdentifier>{c239ebca-e341-4f82-8182-57940fbbb3ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ServerNetworking">
+      <UniqueIdentifier>{90ae1a0c-7816-4d94-84d0-b2079b49269b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ServerDatabase">
+      <UniqueIdentifier>{2a1e42fc-82d1-4797-b930-80a4bde22b57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ServerDatabase">
+      <UniqueIdentifier>{afac7a1f-56d5-4715-98cc-b2b7f50dc196}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SharedNetworking">
+      <UniqueIdentifier>{ad4e0f5e-9101-4c9f-ac25-9b857fa41160}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SharedNetworking">
+      <UniqueIdentifier>{9e876239-9422-4f0c-a3dc-2ae558fc7f51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Timing">
+      <UniqueIdentifier>{fa45c6fa-bab6-41bd-82b4-4ccabe817c02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Timing">
+      <UniqueIdentifier>{082cafeb-52a3-463c-aa76-839d94cfa824}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Server\Social">
+      <UniqueIdentifier>{71278eca-2177-4d96-a694-1b439c2bf54d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server\Social">
+      <UniqueIdentifier>{84d85cae-0591-4744-bc68-10f72b505c31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Server\Mail">
+      <UniqueIdentifier>{d9f6c410-583f-46d8-94b7-25696af6a554}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Server\Realm &amp; Zone">
+      <UniqueIdentifier>{73119c73-2a35-4f9a-9ee5-b1874fa61bd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server\Mail">
+      <UniqueIdentifier>{17407a13-1898-4fce-89b9-968c6543e57b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server\Realm &amp; Zone">
+      <UniqueIdentifier>{2a3c962f-fa91-41c6-820a-27081f7686a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server\Groups">
+      <UniqueIdentifier>{f8d3ad33-a67f-4932-ba2e-44b242852a5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Server\Groups">
+      <UniqueIdentifier>{cf1d068d-2674-40c0-87b6-2f737b0f048e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Server\Character Selection">
+      <UniqueIdentifier>{3578762c-2818-48bb-8af6-0ef9ec5baa45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server\Character Selection">
+      <UniqueIdentifier>{d3c48efa-bdf4-402a-84b9-0fa64dc374f5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Include\Utilities\FileUtils.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Utilities\Listenable.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Utilities\MathConstants.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Utilities\Task.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Utilities\TaskExecutor.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Utilities\TaskListener.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Utilities\Utils.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ServerNetworking\ManagedNetworkHandler.h">
+      <Filter>Header Files\ServerNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ServerNetworking\NetworkHandler.h">
+      <Filter>Header Files\ServerNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ServerNetworking\NetworkHandlerRegister.h">
+      <Filter>Header Files\ServerNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ServerNetworking\NetworkManager.h">
+      <Filter>Header Files\ServerNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ServerNetworking\ConnectionInfo.h">
+      <Filter>Header Files\ServerNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ServerDatabase\Row.h">
+      <Filter>Header Files\ServerDatabase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ServerDatabase\Database.h">
+      <Filter>Header Files\ServerDatabase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Utilities\NCFFile.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\AccountManagement\AccountManager.h">
+      <Filter>Header Files\AccountManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\Entity.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\SharedNetworking\NetworkInstructionDefinitions.h">
+      <Filter>Header Files\SharedNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\SharedNetworking\NetworkMessage.h">
+      <Filter>Header Files\SharedNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\Server.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Timing\TimerListener.h">
+      <Filter>Header Files\Timing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Timing\TimerManager.h">
+      <Filter>Header Files\Timing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\CommandStreamWatcher.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\AccountManagement\AccountProperties.h">
+      <Filter>Header Files\AccountManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\SharedNetworking\NetworkEnums.h">
+      <Filter>Header Files\SharedNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\NameVerifier.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\Player.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Utilities\IndexedVector.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\ChatChannel.h">
+      <Filter>Header Files\Server\Social</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\ChatService.h">
+      <Filter>Header Files\Server\Social</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\ChatUserInfo.h">
+      <Filter>Header Files\Server\Social</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Utilities\SearchableVector.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Utilities\ChatUserTypes.h">
+      <Filter>Header Files\Server\Social</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\ChatMessageValidator.h">
+      <Filter>Header Files\Server\Social</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\CharacterSocialData.h">
+      <Filter>Header Files\Server\Social</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ServerDatabase\DBListAccessor.h">
+      <Filter>Header Files\ServerDatabase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\MailService.h">
+      <Filter>Header Files\Server\Mail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\CharacterMailData.h">
+      <Filter>Header Files\Server\Mail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\Zone.h">
+      <Filter>Header Files\Server\Realm &amp; Zone</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\Realm.h">
+      <Filter>Header Files\Server\Realm &amp; Zone</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\RealmListener.h">
+      <Filter>Header Files\Server\Realm &amp; Zone</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\RealmManager.h">
+      <Filter>Header Files\Server\Realm &amp; Zone</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\RealmProperties.h">
+      <Filter>Header Files\Server\Realm &amp; Zone</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\ZoneTransferRequest.h">
+      <Filter>Header Files\Server\Realm &amp; Zone</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\ZoneManager.h">
+      <Filter>Header Files\Server\Realm &amp; Zone</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\ZoneLocation.h">
+      <Filter>Header Files\Server\Realm &amp; Zone</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\GroupManager.h">
+      <Filter>Header Files\Server\Groups</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\Group.h">
+      <Filter>Header Files\Server\Groups</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\GroupManagerListener.h">
+      <Filter>Header Files\Server\Groups</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\GroupMember.h">
+      <Filter>Header Files\Server\Groups</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ServerDatabase\DBList.h">
+      <Filter>Header Files\ServerDatabase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ServerDatabase\DBTable.h">
+      <Filter>Header Files\ServerDatabase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ServerDatabase\DBMap.h">
+      <Filter>Header Files\ServerDatabase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ServerDatabase\DBMapAccessor.h">
+      <Filter>Header Files\ServerDatabase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ServerDatabase\DBTableAccessor.h">
+      <Filter>Header Files\ServerDatabase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ServerDatabase\Store.h">
+      <Filter>Header Files\ServerDatabase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ServerDatabase\StoreLoader.h">
+      <Filter>Header Files\ServerDatabase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ServerDatabase\DBSupportedTypes.h">
+      <Filter>Header Files\ServerDatabase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ServerDatabase\StoreAccessor.h">
+      <Filter>Header Files\ServerDatabase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Utilities\FileListing.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Utilities\InfoStore.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Utilities\TaskWait.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\CharacterSelectionManager.h">
+      <Filter>Header Files\Server\Character Selection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ServerDatabase\FieldDef.h">
+      <Filter>Header Files\ServerDatabase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ServerDatabase\RowAccessor.h">
+      <Filter>Header Files\ServerDatabase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\SessionManager.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\ServerNetworking\NetworkManagerListener.h">
+      <Filter>Header Files\ServerNetworking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\SessionStates.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\AccountManagement\AccountInfo.h">
+      <Filter>Header Files\AccountManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\Session.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\SessionManagerListener.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\RealmInfo.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\PlayerInfo.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\CharacterStoreDefs.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\CharacterSelectionListener.h">
+      <Filter>Header Files\Server\Character Selection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\StatSheet.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\EntityManager.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\EntityBuilder.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\AOIManager.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\AOI.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\StatSheetKeys.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\Ability.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\AbilityManager.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\AbilityListing.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\AbilityEffect.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\AbilityBuilder.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Server\AbilityInstance.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Source\Utilities\FileUtils.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Utilities\Task.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Utilities\TaskExecutor.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Utilities\Utils.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\ServerNetworking\ManagedNetworkHandler.cpp">
+      <Filter>Source Files\ServerNetworking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\ServerNetworking\NetworkHandler.cpp">
+      <Filter>Source Files\ServerNetworking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\ServerNetworking\NetworkHandlerRegister.cpp">
+      <Filter>Source Files\ServerNetworking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\ServerNetworking\NetworkManager.cpp">
+      <Filter>Source Files\ServerNetworking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\ServerNetworking\ConnectionInfo.cpp">
+      <Filter>Source Files\ServerNetworking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\ServerDatabase\Database.cpp">
+      <Filter>Source Files\ServerDatabase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\ServerDatabase\Row.cpp">
+      <Filter>Source Files\ServerDatabase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Utilities\NCFFile.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Server\Launcher.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\AccountManagement\AccountManager.cpp">
+      <Filter>Source Files\AccountManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Server\Entity.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\SharedNetworking\NetworkMessage.cpp">
+      <Filter>Source Files\SharedNetworking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Server\Server.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Timing\TimerManager.cpp">
+      <Filter>Source Files\Timing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Server\CommandStreamWatcher.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Server\NameVerifier.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Server\ChatChannel.cpp">
+      <Filter>Source Files\Server\Social</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Server\ChatService.cpp">
+      <Filter>Source Files\Server\Social</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Server\ChatUserTypes.cpp">
+      <Filter>Source Files\Server\Social</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Server\ChatMessageValidator.cpp">
+      <Filter>Source Files\Server\Social</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Server\RealmManager.cpp">
+      <Filter>Source Files\Server\Realm &amp; Zone</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Server\Realm.cpp">
+      <Filter>Source Files\Server\Realm &amp; Zone</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Server\Zone.cpp">
+      <Filter>Source Files\Server\Realm &amp; Zone</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Server\ZoneManager.cpp">
+      <Filter>Source Files\Server\Realm &amp; Zone</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Server\Player.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Server\Group.cpp">
+      <Filter>Source Files\Server\Groups</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Server\GroupManager.cpp">
+      <Filter>Source Files\Server\Groups</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\ServerDatabase\Store.cpp">
+      <Filter>Source Files\ServerDatabase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\ServerDatabase\StoreLoader.cpp">
+      <Filter>Source Files\ServerDatabase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\ServerDatabase\DBTable.cpp">
+      <Filter>Source Files\ServerDatabase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\ServerDatabase\DBList.cpp">
+      <Filter>Source Files\ServerDatabase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\ServerDatabase\DBTableAccessor.cpp">
+      <Filter>Source Files\ServerDatabase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\ServerDatabase\DBMap.cpp">
+      <Filter>Source Files\ServerDatabase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\ServerDatabase\StoreAccessor.cpp">
+      <Filter>Source Files\ServerDatabase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Utilities\FileListing.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Utilities\InfoStore.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Utilities\TaskWait.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Server\CharacterSelection.cpp">
+      <Filter>Source Files\Server\Character Selection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\ServerDatabase\RowAccessor.cpp">
+      <Filter>Source Files\ServerDatabase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Server\SessionManager.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Server\StatSheet.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Server\EntityBuilder.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Server\EntityManager.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Server\AOIManager.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Server\AOI.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Server\AbilityManager.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Server\Ability.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Server\AbilityListing.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Server\AbilityEffect.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Server\AbilityInstance.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Server\AbilityBuilder.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

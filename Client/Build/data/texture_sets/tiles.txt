@@ -1,0 +1,9 @@
+~textures
+tile_grass tiles/grass.png
+tile_rock tiles/rock.png
+tile_mud tiles/mud.png
+tile_sand tiles/sand.png
+tile_grass_flowers_variant_1 tiles/grass_flowers_variant_1.png
+tile_grass_flowers_variant_2 tiles/grass_flowers_variant_2.png
+tile_grass_flowers_variant_3 tiles/grass_flowers_variant_3.png
+tile_grass_flowers_variant_4 tiles/grass_flowers_variant_4.png

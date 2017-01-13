@@ -1,0 +1,4 @@
+~textures
+slideshow\\main_menu.jpg
+slideshow\\realm_selection.jpg
+slideshow\\character_selection.jpg

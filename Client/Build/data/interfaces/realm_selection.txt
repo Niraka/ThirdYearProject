@@ -1,0 +1,24 @@
+~header
+realm_selection
+~resources
+t|t_background|ui/realm_selection/background.jpg
+t|t_banner|main_menu_banner_background.png
+t|t_border_corner|main_menu_border_corner.png
+t|t_border_side|main_menu_border_side.png
+t|t_rs_but_back_p|ui/realm_selection/realm_selection_button_back_p.png
+t|t_rs_but_back_h|ui/realm_selection/realm_selection_button_back_h.png
+t|t_rs_but_back_r|ui/realm_selection/realm_selection_button_back_r.png
+y|rs_styles.txt
+~animations
+~components
+i|iRealmSelectionBackground|x|0|x|0|c|1|c|1|tl|t|f|f|f|t|f|none|0|0|f|none|f|none|f|0|f|0|t_background|f|black
+i|iRealmSelectionFrame|x|0|x|0|c|0.7|c|0.6|m|f|f|f|f|t|t|iRealmSelectionBackground|10|0|t|t_border_corner|t|t_border_side|f|0|f|0|t_banner|f|black
+l|lRealmSelectionTitle|x|0|x|20|c|1|x|80|tm|f|f|f|f|t|t|iRealmSelectionBackground|0|0|f|none|f|none|f|0|f|0|f|none|none|rs_title|!Select a realm
+s|sRealmList|c|0.05|x|100|c|0.9|c|0.5|tl|t|t|f|t|t|t|iRealmSelectionBackground|1|2|f|black|f|black|f|0|f|0|-1|20|realm|f
+b|bRealmSelectionBack|c|-0.05|x|-20|x|150|x|50|br|f|t|t|f|t|t|iRealmSelectionBackground|2|0|f|black|f|black|f|0|f|0|f|none|none|t_rs_but_back_r|t_rs_but_back_h|t_rs_but_back_p|f|none|f|t|f|f|t|t|none|none|58
+l|lRealmSelectionBackLabel|x|0|x|0|c|1|c|1|m|f|f|f|f|t|t|iRealmSelectionBackground|0|0|f|none|f|none|f|0|f|0|f|none|none|default|!Back
+~hierarchy
+root|iRealmSelectionBackground
+iRealmSelectionBackground|iRealmSelectionFrame
+iRealmSelectionFrame|lRealmSelectionTitle|bRealmSelectionBack|sRealmList
+bRealmSelectionBack|lRealmSelectionBackLabel

@@ -1,0 +1,8 @@
+~fire_ball
+Launches a fire ball
+~fire_nova
+Emits a fire nova
+~ice_ball
+Launches an ice ball
+~ice_nova
+Emits an ice nova
